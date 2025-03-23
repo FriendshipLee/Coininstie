@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+	<title>CoinIlnsite</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='./css/home.css')}}">
+</head>
+<body>
+	<header>{% include 'header.html' %}</header>
+	<div class=wrap>
+		<form>
+			<div class=search>
+				<h1>원하는 키워드로 <br>빠르고 쉽게!</h1>
+				<div class=search-box>
+					<input type="text" placeholder="검색어를 입력하세요.">
+					<button><img src="{{url_for('static', filename='./img/search_icon.png')}}"></button>
+				</div>
+			</div>
+		</form>
+		<div class=top-list>
+			<div>
+				<h3>현재가 TOP5</h3>
+				<ul>
+					<li>
+						<label><a href="">비트코인</a></label>
+						<span>
+							<span class=blue>124,071,000 KRW</span>
+							<span class=blue>+3.21%</span>
+						</span>
+					</li>
+					<li>
+						<label><a href="">비트코인</a></label>
+						<p>
+							<span class=red>124,071,000 KRW</span>
+							<span class=red>+3.21%</span>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3>변동률 TOP5</h3>
+				<ul>
+					<li>
+						<label><a href="">비트코인</a></label>
+						<p>
+							<span>124,071,000 KRW</span>
+							<span>+3.21%</span>
+						</p>
+					</li>
+					<li>
+						<label><a href="">비트코인</a></label>
+						<p>
+							<span>124,071,000 KRW</span>
+							<span>+3.21%</span>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3>거래금액 TOP5</h3>
+				<ul>
+					<li>
+						<label><a href="">비트코인</a></label>
+						<p>
+							<span>124,071,000 KRW</span>
+							<span>+3.21%</span>
+						</p>
+					</li>
+					<li>
+						<label><a href="">비트코인</a></label>
+						<p>
+							<span>124,071,000 KRW</span>
+							<span>+3.21%</span>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="coin-list">
+			<h3>오늘의 시세</h3>
+		</div>
+	</div>
+</body>
+</html>
